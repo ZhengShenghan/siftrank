@@ -625,7 +625,7 @@ Provide your response in JSON format with two keys: 'pros' and 'cons'. Each valu
 Example: {"pros": "Strong connection to X. References Y explicitly.", "cons": "Lacks specificity compared to documents with Z."}`, len(snippets), docValue, snippetsList)
 
 	// Generate schema for RelevanceProsCons
-	schema := generateSchema[RelevanceProsCons]()
+	schema := GenerateSchema[RelevanceProsCons]()
 
 	// Call provider with options
 	ctx, cancel := context.WithTimeout(context.Background(), 30*time.Second)

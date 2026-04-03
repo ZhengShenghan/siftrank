@@ -1,0 +1,9 @@
+experiment_name: gpt5-nano-vuln-detection
+model: gpt-5-nano
+base_url: https://api.openai.com/v1
+api_key_cmd: echo $OPENAI_API_KEY
+encoding: o200k_base
+concurrency: 100
+data_file: data/eval_pairs.json
+output_dir: results
+vuln_type: any

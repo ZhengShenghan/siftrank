@@ -3,3 +3,8 @@
 notes.txt
 *.env
 config.yaml
+
+# Eval data and results
+eval/data/
+eval/results/
+testdata/decompiled_functions.json

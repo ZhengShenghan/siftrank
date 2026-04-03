@@ -1,0 +1,178 @@
+{
+  "CWE-119": {
+    "description": "The product performs operations on a memory buffer, but it reads from or writes to a memory location outside the buffer&#39;s intended boundary. This may result in read or write operations on unexpected memory locations that could be linked to other variables, data structures, or internal program data.",
+    "name": "Improper Restriction of Operations within the Bounds of a Memory Buffer"
+  },
+  "CWE-120": {
+    "description": "The product copies an input buffer to an output buffer without verifying that the size of the input buffer is less than the size of the output buffer.",
+    "name": "Buffer Copy without Checking Size of Input (&#39;Classic Buffer Overflow&#39;)"
+  },
+  "CWE-122": {
+    "description": "A heap overflow condition is a buffer overflow, where the buffer that can be overwritten is allocated in the heap portion of memory, generally meaning that the buffer was allocated using a routine such as malloc().",
+    "name": "Heap-based Buffer Overflow"
+  },
+  "CWE-125": {
+    "description": "The product reads data past the end, or before the beginning, of the intended buffer.",
+    "name": "Out-of-bounds Read"
+  },
+  "CWE-134": {
+    "description": "The product uses a function that accepts a format string as an argument, but the format string originates from an external source.",
+    "name": "Use of Externally-Controlled Format String"
+  },
+  "CWE-189": {
+    "description": "Weaknesses in this category are related to improper calculation or conversion of numbers.",
+    "name": "CWE CATEGORY: Numeric Errors"
+  },
+  "CWE-190": {
+    "description": "The product performs a calculation that can produce an integer overflow or wraparound when the logic assumes that the resulting value will always be larger than the original value. This occurs when an integer value is incremented to a value that is too large to store in the associated representation. When this occurs, the value may become a very small or negative number.",
+    "name": "Integer Overflow or Wraparound"
+  },
+  "CWE-191": {
+    "description": "The product subtracts one value from another, such that the result is less than the minimum allowable integer value, which produces a value that is not equal to the correct result.",
+    "name": "Integer Underflow (Wrap or Wraparound)"
+  },
+  "CWE-20": {
+    "description": "The product receives input or data, but it does not validate or incorrectly validates that the input has the properties that are required to process the data safely and correctly.",
+    "name": "Improper Input Validation"
+  },
+  "CWE-200": {
+    "description": "The product exposes sensitive information to an actor that is not explicitly authorized to have access to that information.",
+    "name": "Exposure of Sensitive Information to an Unauthorized Actor"
+  },
+  "CWE-22": {
+    "description": "The product uses external input to construct a pathname that is intended to identify a file or directory that is located underneath a restricted parent directory, but the product does not properly neutralize special elements within the pathname that can cause the pathname to resolve to a location that is outside of the restricted directory.",
+    "name": "Improper Limitation of a Pathname to a Restricted Directory (&#39;Path Traversal&#39;)"
+  },
+  "CWE-254": {
+    "description": "Software security is not security software. Here we&#39;re concerned with topics like authentication, access control, confidentiality, cryptography, and privilege management.",
+    "name": "CWE CATEGORY: 7PK - Security Features"
+  },
+  "CWE-255": {
+    "description": "Weaknesses in this category are related to the management of credentials.",
+    "name": "CWE CATEGORY: Credentials Management Errors"
+  },
+  "CWE-264": {
+    "description": "Weaknesses in this category are related to the management of permissions, privileges, and other security features that are used to perform access control.",
+    "name": "CWE CATEGORY: Permissions, Privileges, and Access Controls"
+  },
+  "CWE-269": {
+    "description": "The product does not properly assign, modify, track, or check privileges for an actor, creating an unintended sphere of control for that actor.",
+    "name": "Improper Privilege Management"
+  },
+  "CWE-287": {
+    "description": "When an actor claims to have a given identity, the product does not prove or insufficiently proves that the claim is correct.",
+    "name": "Improper Authentication"
+  },
+  "CWE-310": {
+    "description": "Weaknesses in this category are related to the design and implementation of data confidentiality and integrity. Frequently these deal with the use of encoding techniques, encryption libraries, and hashing algorithms. The weaknesses in this category could lead to a degradation of the quality data if they are not addressed.",
+    "name": "CWE CATEGORY: Cryptographic Issues"
+  },
+  "CWE-327": {
+    "description": "The product uses a broken or risky cryptographic algorithm or protocol.",
+    "name": "Use of a Broken or Risky Cryptographic Algorithm"
+  },
+  "CWE-346": {
+    "description": "The product does not properly verify that the source of data or communication is valid.",
+    "name": "Origin Validation Error"
+  },
+  "CWE-347": {
+    "description": "The product does not verify, or incorrectly verifies, the cryptographic signature for data.",
+    "name": "Improper Verification of Cryptographic Signature"
+  },
+  "CWE-362": {
+    "description": "The product contains a concurrent code sequence that requires temporary, exclusive access to a shared resource, but a timing window exists in which the shared resource can be modified by another code sequence operating concurrently.",
+    "name": "Concurrent Execution using Shared Resource with Improper Synchronization (&#39;Race Condition&#39;)"
+  },
+  "CWE-369": {
+    "description": "The product divides a value by zero.",
+    "name": "Divide By Zero"
+  },
+  "CWE-399": {
+    "description": "Weaknesses in this category are related to improper management of system resources.",
+    "name": "CWE CATEGORY: Resource Management Errors"
+  },
+  "CWE-400": {
+    "description": "The product does not properly control the allocation and maintenance of a limited resource.",
+    "name": "Uncontrolled Resource Consumption"
+  },
+  "CWE-415": {
+    "description": "The product calls free() twice on the same memory address.",
+    "name": "Double Free"
+  },
+  "CWE-416": {
+    "description": "The product reuses or references memory after it has been freed. At some point afterward, the memory may be allocated again and saved in another pointer, while the original pointer references a location somewhere within the new allocation. Any operations using the original pointer are no longer valid because the memory &#34;belongs&#34; to the code that operates on the new pointer.",
+    "name": "Use After Free"
+  },
+  "CWE-476": {
+    "description": "The product dereferences a pointer that it expects to be valid but is NULL.",
+    "name": "NULL Pointer Dereference"
+  },
+  "CWE-59": {
+    "description": "The product attempts to access a file based on the filename, but it does not properly prevent that filename from identifying a link or shortcut that resolves to an unintended resource.",
+    "name": "Improper Link Resolution Before File Access (&#39;Link Following&#39;)"
+  },
+  "CWE-613": {
+    "description": "According to WASC, &#34;Insufficient Session Expiration is when a web site permits an attacker to reuse old session credentials or session IDs for authorization.&#34;",
+    "name": "Insufficient Session Expiration"
+  },
+  "CWE-665": {
+    "description": "The product does not initialize or incorrectly initializes a resource, which might leave the resource in an unexpected state when it is accessed or used.",
+    "name": "Improper Initialization"
+  },
+  "CWE-670": {
+    "description": "The code contains a control flow path that does not reflect the algorithm that the path is intended to implement, leading to incorrect behavior any time this path is navigated.",
+    "name": "Always-Incorrect Control Flow Implementation"
+  },
+  "CWE-674": {
+    "description": "The product does not properly control the amount of recursion that takes place, consuming excessive resources, such as allocated memory or the program stack.",
+    "name": "Uncontrolled Recursion"
+  },
+  "CWE-682": {
+    "description": "The product performs a calculation that generates incorrect or unintended results that are later used in security-critical decisions or resource management.",
+    "name": "Incorrect Calculation"
+  },
+  "CWE-755": {
+    "description": "The product does not handle or incorrectly handles an exceptional condition.",
+    "name": "Improper Handling of Exceptional Conditions"
+  },
+  "CWE-77": {
+    "description": "The product constructs all or part of a command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended command when it is sent to a downstream component.",
+    "name": "Improper Neutralization of Special Elements used in a Command (&#39;Command Injection&#39;)"
+  },
+  "CWE-770": {
+    "description": "The product allocates a reusable resource or group of resources on behalf of an actor without imposing any intended restrictions on the size or number of resources that can be allocated.",
+    "name": "Allocation of Resources Without Limits or Throttling"
+  },
+  "CWE-772": {
+    "description": "The product does not release a resource after its effective lifetime has ended, i.e., after the resource is no longer needed.",
+    "name": "Missing Release of Resource after Effective Lifetime"
+  },
+  "CWE-787": {
+    "description": "The product writes data past the end, or before the beginning, of the intended buffer.",
+    "name": "Out-of-bounds Write"
+  },
+  "CWE-79": {
+    "description": "The product does not neutralize or incorrectly neutralizes user-controllable input before it is placed in output that is used as a web page that is served to other users.",
+    "name": "Improper Neutralization of Input During Web Page Generation (&#39;Cross-site Scripting&#39;)"
+  },
+  "CWE-835": {
+    "description": "The product contains an iteration or loop with an exit condition that cannot be reached, i.e., an infinite loop.",
+    "name": "Loop with Unreachable Exit Condition (&#39;Infinite Loop&#39;)"
+  },
+  "CWE-863": {
+    "description": "The product performs an authorization check when an actor attempts to access a resource or perform an action, but it does not correctly perform the check.",
+    "name": "Incorrect Authorization"
+  },
+  "CWE-88": {
+    "description": "The product constructs a string for a command to be executed by a separate component in another control sphere, but it does not properly delimit the intended arguments, options, or switches within that command string.",
+    "name": "Improper Neutralization of Argument Delimiters in a Command (&#39;Argument Injection&#39;)"
+  },
+  "CWE-924": {
+    "description": "The product establishes a communication channel with an endpoint and receives a message from that endpoint, but it does not sufficiently ensure that the message was not modified during transmission.",
+    "name": "Improper Enforcement of Message Integrity During Transmission in a Communication Channel"
+  },
+  "CWE-94": {
+    "description": "The product constructs all or part of a code segment using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the syntax or behavior of the intended code segment.",
+    "name": "Improper Control of Generation of Code (&#39;Code Injection&#39;)"
+  }
+}

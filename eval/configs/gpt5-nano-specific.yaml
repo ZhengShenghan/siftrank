@@ -1,0 +1,10 @@
+experiment_name: gpt5-nano-specific-cwe
+model: gpt-5-nano
+base_url: https://api.openai.com/v1
+api_key_cmd: echo $OPENAI_API_KEY
+encoding: o200k_base
+concurrency: 200
+data_file: data/eval_pairs.json
+output_dir: results
+vuln_type: specific
+cwe_desc_file: configs/cwe_descriptions.json

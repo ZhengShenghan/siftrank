@@ -95,8 +95,8 @@ func (u *Usage) Add(other Usage) {
 	u.ReasoningTokens += other.ReasoningTokens
 }
 
-// generateSchema generates a JSON schema from a Go type
-func generateSchema[T any]() interface{} {
+// GenerateSchema generates a JSON schema from a Go type
+func GenerateSchema[T any]() interface{} {
 	reflector := jsonschema.Reflector{
 		AllowAdditionalProperties: false,
 		DoNotReference:            true,

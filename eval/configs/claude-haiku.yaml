@@ -1,0 +1,10 @@
+experiment_name: claude-haiku-vuln-detection
+model: anthropic/claude-3.5-haiku
+base_url: https://openrouter.ai/api/v1
+api_key_cmd: echo $OPENROUTER_API_KEY
+encoding: o200k_base
+concurrency: 10
+data_file: eval/data/eval_pairs.json
+output_dir: eval/results
+vuln_type: any
+temperature: 0.0

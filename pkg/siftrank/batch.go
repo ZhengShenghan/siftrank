@@ -153,10 +153,10 @@ func translateIDsInResponse(response *rankedDocumentResponse, tempToOriginal map
 func (r *Ranker) getResponseSchema() interface{} {
 	// Use relevance schema when relevance is enabled AND we're past round 1
 	if r.cfg.Relevance && r.round > 1 {
-		return generateSchema[rankedDocumentResponseWithRelevance]()
+		return GenerateSchema[rankedDocumentResponseWithRelevance]()
 	}
 	// For round 1 or when relevance is disabled, use schema without relevance field
-	return generateSchema[rankedDocumentResponseNoRelevance]()
+	return GenerateSchema[rankedDocumentResponseNoRelevance]()
 }
 
 func (r *Ranker) estimateTokens(group []document, includePrompt bool) int {

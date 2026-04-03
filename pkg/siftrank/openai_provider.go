@@ -123,7 +123,7 @@ func (p *OpenAIProvider) Complete(ctx context.Context, prompt string, opts *Comp
 		}
 
 		// Create timeout context for this attempt
-		timeoutCtx, cancel := context.WithTimeout(ctx, 15*time.Second)
+		timeoutCtx, cancel := context.WithTimeout(ctx, 120*time.Second)
 
 		// Build request
 		params := openai.ChatCompletionNewParams{

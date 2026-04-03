@@ -1,0 +1,10 @@
+experiment_name: gemini-flash-vuln-detection
+model: google/gemini-2.0-flash-lite
+base_url: https://openrouter.ai/api/v1
+api_key_cmd: echo $OPENROUTER_API_KEY
+encoding: o200k_base
+concurrency: 10
+data_file: eval/data/eval_pairs.json
+output_dir: eval/results
+vuln_type: any
+temperature: 0.0
